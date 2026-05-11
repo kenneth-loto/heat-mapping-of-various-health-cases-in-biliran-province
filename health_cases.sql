@@ -50,9 +50,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `first_name`, `middle_name`, `last_name`, `suffix`, `email`, `contact_number`, `province`, `municipality`, `barangay`, `street`, `password`, `valid_id`, `created_at`, `updated_at`) VALUES
-(1, 'Kenneth', 'Alburo', 'Loto', '', 'kennethloto046@gmail.com', '9700878578', 'Leyte', 'Leyte', 'Palarao', 'St. Maritana', '$2y$10$nYJTPyC3OMd7EyUznLO6yu4O7eVU7yPyAUzcOSFMtHiE8KGeS5KPq', '[\"assets\\/images\\/uploads\\/valid_id\\/id.png\"]', '2024-11-07 14:00:27', '2024-11-07 14:00:27'),
-(2, 'Admin', '', '1', '', 'admin1@gmail.com', '9700878578', 'Biliran', 'Naval', 'Santissimo Rosario Pob.', '', '$2y$10$a7.NpNRcvBwIkdylQtuzQeHfGEvaRGcvKteM6p017EuFm41bwqBF2', '[\"assets\\/images\\/uploads\\/valid_id\\/id.png\"]', '2024-11-12 07:24:54', '2024-11-12 07:24:54'),
-(3, 'Ember', '', 'Rosales', '', 'emberrosales@gmail.com', '9876543210', 'Biliran', 'Biliran', '087802009', '', '$2y$10$5/vlTjJQzvdixz6auLXNiuKaXJ.tWgJUPu7pLnUWb5ieAqs1Wmevq', '[\"assets\\/images\\/uploads\\/valid_id\\/id.png\"]', '2024-11-21 01:53:34', '2024-11-21 01:53:34');
+(1, 'Admin', '', '1', '', 'admin@gmail.com', '9700878578', 'Biliran', 'Naval', 'Santissimo Rosario Pob.', '', '$2y$10$a7.NpNRcvBwIkdylQtuzQeHfGEvaRGcvKteM6p017EuFm41bwqBF2', '[\"assets\\/images\\/uploads\\/valid_id\\/id.png\"]', '2024-11-12 07:24:54', '2024-11-12 07:24:54'),
 
 -- --------------------------------------------------------
 
