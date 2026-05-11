@@ -110,4 +110,4 @@ Alert threshold is currently hardcoded at **10 cases per week** across all disea
 
 ## License
 
-MIT
+This project is open source and available under the [MIT License](LICENSE).
