@@ -1,0 +1,53 @@
+#map {
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+#title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+#municipality-disease-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+#legend {
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border: 2px solid black;
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  z-index: 1000;
+  width: 120px;
+  font-size: 15px;
+}
+
+#zoom-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.zoom-btn {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}

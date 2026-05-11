@@ -1,0 +1,17 @@
+.left-sidebar {
+  margin-left: -25px; /* Adjust the margin as needed */
+}
+
+body {
+  background-color: #fff; /* White background color */
+}
+
+.btn {
+  border: none !important;
+  justify-content: start !important;
+}
+
+.navbar {
+  border-left: 1px solid #ccc; /* Add a 1px solid border to the left side of the navbar */
+  border-right: 1px solid #ccc; /* Add a 1px solid border to the right side of the navbar */
+}

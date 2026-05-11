@@ -1,0 +1,5 @@
+vendor/
+PHPMailer-6.9.2/
+conn.php
+composer.lock
+*.py

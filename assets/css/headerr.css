@@ -1,0 +1,35 @@
+.left-sidebar {
+  background-color: #006666; /* Dark background color for sidebar */
+  color: #ecf0f1; /* Light text color */
+}
+
+/* Dark background for the content areas (like History and Requests) */
+.body-wrapper .container-fluid {
+  background-color: #006666; /* Darker background for content */
+  color: #ecf0f1; /* Light text color */
+  padding: 20px;
+  border-radius: 8px; /* Optional: add some border-radius for smoother edges */
+}
+
+/* Styling for the sidebar links */
+.sidebar-nav ul li a {
+  color: #ecf0f1; /* Light text color for links */
+}
+
+.sidebar-nav ul li a:hover {
+  background-color: #006666; /* Darker color on hover */
+  color: #ecf0f1; /* Keep text light on hover */
+}
+
+/* Change active button background color */
+.btn.active {
+  background-color: #66b2b2 !important; /* Change this to your desired active button color */
+  color: #ffffff; /* White text color for active button */
+}
+
+/* Optional: Change hover state for buttons */
+.btn:hover {
+  background-color: #66b2b2 !important; /* Change this to your desired hover color */
+  color: #ffffff !important; /* Text color on hover */
+  border: 1px solid #bbb; /* Slight border change on hover */
+}
