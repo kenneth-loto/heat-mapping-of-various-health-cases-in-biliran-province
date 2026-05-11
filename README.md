@@ -2,6 +2,8 @@
 
 A web-based Geographic Information System (GIS) for monitoring disease patterns in Biliran Province. Built with Leaflet.js, PHP, and MySQL, it renders health case data as interactive heatmaps and choropleth maps with a threshold-based alert system.
 
+![Preview](assets/images/preview.png)
+
 ## Features
 
 - **Heat Map Layer** — Weighted heatmap overlay showing disease density across the province.
@@ -42,7 +44,7 @@ A web-based Geographic Information System (GIS) for monitoring disease patterns 
 │   ├── json/                 # GeoJSON & municipality/barangay data
 │   ├── leaflet/              # Leaflet library files
 │   ├── libs/                 # Third-party libs (Bootstrap, etc.)
-│   └── images/               # Uploads and profile images
+│   └── images/               # Uploads and profile images, and preview.png
 ├── vendor/                   # Composer dependencies (TCPDF)
 ├── conn.php                  # Database connection (gitignored)
 ├── function.php              # Core application logic (Functions class)
