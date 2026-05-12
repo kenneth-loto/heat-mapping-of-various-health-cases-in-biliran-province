@@ -2,7 +2,7 @@
 
 A web-based GIS for monitoring disease patterns in Biliran Province. Built with Leaflet.js, PHP, and MySQL — renders health case data as interactive heatmaps and choropleth maps with a threshold-based alert system.
 
-![Preview](assets/images/preview.png)
+![Preview](assets/images/project-preview.png)
 
 ## Features
 
