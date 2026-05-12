@@ -1,6 +1,6 @@
 # Heat Mapping of Various Health Cases in Biliran Province
 
-A web-based Geographic Information System (GIS) for monitoring disease patterns in Biliran Province. Built with Leaflet.js, PHP, and MySQL, it renders health case data as interactive heatmaps and choropleth maps with a threshold-based alert system.
+A web-based GIS for monitoring disease patterns in Biliran Province. Built with Leaflet.js, PHP, and MySQL — renders health case data as interactive heatmaps and choropleth maps with a threshold-based alert system.
 
 ![Preview](assets/images/preview.png)
 
@@ -8,9 +8,9 @@ A web-based Geographic Information System (GIS) for monitoring disease patterns 
 
 - **Heat Map Layer** — Weighted heatmap overlay showing disease density across the province.
 - **Choropleth Map** — Color-coded barangay-level visualization based on case counts.
-- **Threshold-Based Alerts** — Flags barangays/municipalities when weekly case counts exceed a defined threshold (baseline: 10 cases/week).
-- **Multi-Case Tracking** — Supports 5 disease types (Diabetes, Pneumonia, Tuberculosis, HFMD, Monkey Fox) with an architecture designed to accommodate more.
-- **Dual User Roles** — Admin panel for province-level management and Municipality User panel for local data entry.
+- **Threshold-Based Alerts** — Flags barangays/municipalities when weekly cases exceed a defined threshold (default: 10 cases/week).
+- **Multi-Case Tracking** — Supports 5 disease types (Diabetes, Pneumonia, Tuberculosis, HFMD, Monkeypox) with architecture designed to accommodate more.
+- **Dual User Roles** — Admin panel for province-level management; Municipality User panel for local data entry.
 
 ## Tech Stack
 
@@ -44,7 +44,7 @@ A web-based Geographic Information System (GIS) for monitoring disease patterns 
 │   ├── json/                 # GeoJSON & municipality/barangay data
 │   ├── leaflet/              # Leaflet library files
 │   ├── libs/                 # Third-party libs (Bootstrap, etc.)
-│   └── images/               # Uploads and profile images, and preview.png
+│   └── images/               # Uploads, profile images, preview.png
 ├── vendor/                   # Composer dependencies (TCPDF)
 ├── conn.php                  # Database connection (gitignored)
 ├── function.php              # Core application logic (Functions class)
@@ -84,7 +84,7 @@ Create a MySQL database named `health_cases` and import the schema (tables: `adm
 
 4. **Configure database connection**
 
-Copy `conn.example.php` to `conn.php` and update the credentials:
+Copy `conn.example.php` to `conn.php` and update credentials:
 
 ```php
 private $hostdb = "localhost";
@@ -95,21 +95,21 @@ private $namedb = "health_cases";
 
 5. **Serve the application**
 
-If using Laragon, the project is already inside `C:\laragon\www\`, so access it directly at:
+Using Laragon, access directly at:
 
 ```
 http://heat-mapping-of-various-health-cases-in-biliran-province.test
 ```
 
-6. **Access**
+6. **Login URLs**
 
-- Admin login: `/admin/admin_login.php`
-- Municipality User login: `/municipality_user/municipality_user_login.php`
+- Admin: `/admin/admin_login.php`
+- Municipality User: `/municipality_user/municipality_user_login.php`
 
-## Default Threshold
+## Notes
 
-Alert threshold is currently hardcoded at **10 cases per week** across all disease types. This is a starting point — future development should implement per-disease adaptive thresholds based on historical baselines and population density.
+Alert threshold is hardcoded at **10 cases/week** across all disease types. Future development should implement per-disease adaptive thresholds based on historical baselines and population density.
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+MIT — see [LICENSE](LICENSE).
